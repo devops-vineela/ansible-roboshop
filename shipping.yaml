@@ -7,6 +7,12 @@
       name: maven
       state: installed
 
+  - name: install pymysql
+    ansible.builtin.pip:
+      name: PyMySQL
+      state: installed
+      executable: pip3.9
+
 
   - name: create roboshop user
     ansible.builtin.user:
