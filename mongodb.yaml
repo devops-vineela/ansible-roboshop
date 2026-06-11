@@ -3,7 +3,7 @@
   become: yes
   tasks:
   - name: copying mongodb repo
-    ansible.builtoin.copy:
+    ansible.builtin.copy:
       src: mongo.repo
       dest: /etc/yum.repos.d/mongo.repo
   
@@ -28,4 +28,3 @@
     ansible.builtin.service:
       name: mongod
       state: restarted
-      
