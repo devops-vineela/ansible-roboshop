@@ -55,7 +55,7 @@
   - name: start and enable service
     ansible.builtin.service:
       name: shipping
-      start: started
+      state: started
       enabled: yes
 
   - name: install mysql client
