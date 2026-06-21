@@ -56,7 +56,7 @@
   
   - name: daemon reload
     ansible.builtin.systemd:
-      daemon-reload: true
+      daemon-reload: yes
       
   - name: start and enable service
     ansible.builtin.service:
